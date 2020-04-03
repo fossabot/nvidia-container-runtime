@@ -1,6 +1,7 @@
 # nvidia-container-runtime
 [![GitHub license](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat-square)](https://raw.githubusercontent.com/NVIDIA/nvidia-container-runtime/master/LICENSE)
 [![Package repository](https://img.shields.io/badge/packages-repository-b956e8.svg?style=flat-square)](https://nvidia.github.io/nvidia-container-runtime)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdcermak%2Fnvidia-container-runtime.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdcermak%2Fnvidia-container-runtime?ref=badge_shield)
 
 A modified version of [runc](https://github.com/opencontainers/runc) adding a custom [pre-start hook](https://github.com/opencontainers/runtime-spec/blob/master/config.md#prestart) to all containers.  
 If environment variable `NVIDIA_VISIBLE_DEVICES` is set in the OCI spec, the hook will configure GPU access for the container by leveraging `nvidia-container-cli` from project [libnvidia-container](https://github.com/NVIDIA/libnvidia-container).
@@ -143,3 +144,6 @@ In addition, if `NVIDIA_REQUIRE_CUDA` is not set, `NVIDIA_VISIBLE_DEVICES` and `
 ## Copyright and License
 
 This project is released under the [BSD 3-clause license](https://github.com/NVIDIA/nvidia-container-runtime/blob/master/LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdcermak%2Fnvidia-container-runtime.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdcermak%2Fnvidia-container-runtime?ref=badge_large)
